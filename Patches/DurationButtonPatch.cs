@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using HarmonyLib;
 using Pigeon.UI;
 
-namespace NoBackgroundHover.Patches;
+namespace MycoNoBackgroundHover.Patches;
 
 [HarmonyPatch(typeof(DurationButton))]
 public class DurationButtonPatch

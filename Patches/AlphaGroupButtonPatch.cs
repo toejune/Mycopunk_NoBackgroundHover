@@ -3,7 +3,7 @@ using Pigeon.UI;
 using System;
 using System.Runtime.InteropServices;
 
-namespace NoBackgroundHover.Patches;
+namespace MycoNoBackgroundHover.Patches;
 
 [HarmonyPatch(typeof(AlphaGroupButton))]
 public class AlphaGroupButtonPatch

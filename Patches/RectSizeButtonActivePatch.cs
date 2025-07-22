@@ -3,7 +3,7 @@ using System;
 using System.Runtime.InteropServices;
 using Pigeon.UI;
 
-namespace NoBackgroundHover.Patches;
+namespace MycoNoBackgroundHover.Patches;
 
 [HarmonyPatch(typeof(RectSizeButtonActive))]
 public class RectSizeButtonActivePatch

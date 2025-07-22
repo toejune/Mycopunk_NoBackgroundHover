@@ -4,7 +4,7 @@ using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
 
-namespace NoBackgroundHover
+namespace MycoNoBackgroundHover
 {
     [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
     public class Plugin : BaseUnityPlugin
@@ -33,6 +33,7 @@ namespace NoBackgroundHover
             _harmony.PatchAll(typeof(Patches.PositionButtonPatch));
             _harmony.PatchAll(typeof(Patches.RectSizeButtonPatch));
             _harmony.PatchAll(typeof(Patches.RectSizeButtonActivePatch));
+            _harmony.PatchAll(typeof(Patches.HoverInfoDisplayPatch));
 
             Logger.LogInfo($"{MyPluginInfo.PLUGIN_GUID} is loaded!");
         }
